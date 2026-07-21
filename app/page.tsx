@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const whatsappUrl =
   "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Top";
 
@@ -235,8 +237,7 @@ export default function Home() {
         <div className="footer-social">
           <span>Siga a Barbearia Top</span>
           <a href="https://instagram.com/barbeariatop.exemplo" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://facebook.com/barbeariatop.exemplo" target="_blank" rel="noreferrer">Facebook</a>
-          <a href="https://tiktok.com/@barbeariatop.exemplo" target="_blank" rel="noreferrer">TikTok</a>
+          <a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp: (11) 99999-9999</a>
         </div>
         <div className="footer-bottom">
           <span>© 2026 Barbearia Top. Todos os direitos reservados.</span>
@@ -245,7 +246,13 @@ export default function Home() {
       </footer>
 
       <a className="whatsapp-float" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Falar com a Barbearia Top pelo WhatsApp">
-        <span aria-hidden="true">WA</span>
+        <Image
+          src="/whatsapp.svg"
+          width={28}
+          height={28}
+          alt=""
+          aria-hidden="true"
+        />
       </a>
     </main>
   );

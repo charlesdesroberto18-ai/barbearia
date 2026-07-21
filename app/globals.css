@@ -603,7 +603,7 @@ h2 {
 
 .footer-social {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   gap: 12px 28px;
   align-content: start;
   font-size: 13px;
@@ -643,6 +643,11 @@ h2 {
   right: 22px;
   bottom: 22px;
   z-index: 20;
+}
+
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
 }
 
 a:focus-visible,
