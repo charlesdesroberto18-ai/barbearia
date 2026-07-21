@@ -42,9 +42,6 @@ const gallery = [
 function Brand() {
   return (
     <a className="brand" href="#inicio" aria-label="Barbearia Top — início">
-      <span className="brand-mark" aria-hidden="true">
-        <span>BT</span>
-      </span>
       <span className="brand-copy">
         <strong>Barbearia</strong>
         <b>Top</b>
@@ -130,7 +127,6 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=88"
             alt="Cadeira de barbeiro em ambiente clássico e moderno"
           />
-          <span className="image-stamp">Desde 2018</span>
         </div>
       </section>
 

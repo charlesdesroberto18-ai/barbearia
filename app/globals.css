@@ -80,32 +80,6 @@ a {
   width: max-content;
   display: inline-flex;
   align-items: center;
-  gap: 13px;
-}
-
-.brand-mark {
-  width: 58px;
-  height: 58px;
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  inset: 4px -5px -4px 5px;
-  border: 1px solid rgba(21, 17, 15, .35);
-  border-radius: 50%;
-}
-
-.brand-mark span {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .04em;
-  z-index: 1;
 }
 
 .brand-copy {
@@ -341,24 +315,6 @@ h2 {
   width: 100%;
   height: 570px;
   object-fit: cover;
-}
-
-.image-stamp {
-  width: 118px;
-  height: 118px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--brown);
-  color: var(--white);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  position: absolute;
-  left: -50px;
-  bottom: 40px;
-  transform: rotate(-8deg);
 }
 
 .services {
@@ -703,10 +659,6 @@ summary:focus-visible {
     grid-column: 2;
   }
 
-  .image-stamp {
-    left: -25px;
-  }
-
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -734,11 +686,6 @@ summary:focus-visible {
     min-height: 92px;
     padding-top: 15px;
     padding-bottom: 15px;
-  }
-
-  .brand-mark {
-    width: 48px;
-    height: 48px;
   }
 
   .brand-copy b {
@@ -791,14 +738,6 @@ summary:focus-visible {
 
   .intro-image img {
     height: 420px;
-  }
-
-  .image-stamp {
-    width: 96px;
-    height: 96px;
-    left: auto;
-    right: 18px;
-    bottom: -30px;
   }
 
   .service-row {
